@@ -1,26 +1,31 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-// const util = require("util");
 
 const generateMarkdown = require("./utils/generateMarkdown.js");
-// const writeToFile = util.promisify(fs.writeFile);
 
 // array of questions for user
 const questions = [
   {
     type: "input",
+    name: "name",
+    message: "Name",
+  },
+  { type: "input", name: "github", message: "Enter your GITHUB username" },
+  { type: "input", name: "email", message: "Please enter your email address" },
+  {
+    type: "input",
     name: "title",
-    message: "What is the title of your project?",
+    message: "Project Title",
   },
   {
     type: "input",
-    name: "project_description",
-    message: "Enter your project description:",
+    name: "description",
+    message: "Project Description",
   },
   {
     type: "input",
     name: "installation",
-    message: "Enter project installation instructions",
+    message: "Project installation instructions",
   },
   {
     type: "input",
@@ -28,23 +33,23 @@ const questions = [
     message: "Are there any contribution guidelines for your project?",
   },
   {
-    type: "checkbox",
+    type: "input",
+    name: "usage",
+    message: "Please describe how this project can be used",
+  },
+  {
+    type: "list",
     name: "license",
     choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "NONE"],
   },
 ];
 
-// This function works, and generates the questions in the terminal by running node index.js
-
 // function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (error, data) =>
-    error ? console.error(error) : console.log(data)
-  );
+  fs.writeFile(fileName, data, (err) => {
+    if (err) throw err;
+  });
 }
-
-// // dynamically create the README
-// const generateReadMe = (response) =>
 
 // function to initialize program - kicks off questions
 function init() {
