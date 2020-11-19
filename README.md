@@ -1,6 +1,9 @@
 # Project Title: ReadME Generator
 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
+![License](https://img.shields.io/badge/license-APACHE2.0-green.svg)
+![License](https://img.shields.io/badge/license-GPL3.0-green.svg)
+![License](https://img.shields.io/badge/license-BSD3-green.svg)
 
 ## Description:
 
