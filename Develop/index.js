@@ -8,7 +8,7 @@ const questions = [
   {
     type: "input",
     name: "name",
-    message: "Name",
+    message: "Full Name",
   },
   { type: "input", name: "github", message: "Enter your GITHUB username" },
   { type: "input", name: "email", message: "Please enter your email address" },
@@ -21,6 +21,11 @@ const questions = [
     type: "input",
     name: "description",
     message: "Project Description",
+  },
+  {
+    type: "input",
+    name: "deployment",
+    message: "What is the link to the deployed application?",
   },
   {
     type: "input",

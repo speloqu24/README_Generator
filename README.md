@@ -1,4 +1,4 @@
-# Project Title: ReadME Generator
+# <span style="color:yellowgreen"> Project Title: </span> ReadME Generator
 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![License](https://img.shields.io/badge/license-APACHE2.0-green.svg)

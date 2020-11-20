@@ -1,13 +1,11 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# Project Title: ${data.title}
-  
-  ![License](https://img.shields.io/badge/license-${encodeURIComponent(
+  return `# ![License](https://img.shields.io/badge/license-${encodeURIComponent(
     data.license
-  )}-green.svg)
+  )}-green.svg) Title: ${data.title}
+  
+  >Deployed Application: ${data.deployment}
 
-  ## Description: 
-  > *${data.description}*
   
   ## Table of Contents
   
@@ -16,28 +14,43 @@ function generateMarkdown(data) {
   * [Usage](#usage)
   * [Contribution](#contributing)
   * [License](#license)
-  * [Contact](#contact)
+  * [Questions](#questions)
   
+  ## Description
+  ***
+  > *${data.description}*
+
 ## Installation
-> *${data.installation}*
+***
+> Instructions: ${data.installation}
+>
+> *To begin install please head on over to the repo found in the [Questions](#questions) section of this README*
+
 
 ## Usage
-> *${data.usage}*
+***
+> ${data.usage}
 
-## Contributing
-> *${data.contribution}*
+## Contribution
+***
+> ${data.contribution}
 
 ## License
+***
 > This application is covered under the *${data.license}* license
 
 ## Questions
->[GitHub Profile](https://github.com/${data.github})
+***
+>*If you have any questions at all please don't hesitate to review the repo or email me directly*
+>
+>  [![Generic badge](https://img.shields.io/badge/Github-dodgerblue.svg)](https://github.com/${
+    data.github
+  })
+> [![Generic badge](https://img.shields.io/badge/Email-dodgerblue.svg)](mailto:${
+    data.email
+  })
 
-If you have any questions at all please don't hesitate to reach out via the contact information below. 
 
-> |Name|GitHub|Email Address|
-> |----|------|--------|
-> | ${data.name} | ${data.github} | ${data.email} |
 
 `;
 }
