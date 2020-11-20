@@ -4,6 +4,7 @@ function generateMarkdown(data) {
     data.license
   )}-green.svg) Title: ${data.title}
   
+  ${data.name}
   >Deployed Application: ${data.deployment}
 
   

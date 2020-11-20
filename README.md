@@ -1,4 +1,6 @@
-# ![License](https://img.shields.io/badge/license-GPL%203.0-green.svg) Title: README Generator
+# ![License](https://img.shields.io/badge/license-GPL%203.0-green.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg) ![License](https://img.shields.io/badge/license-Apache2.0-green.svg) ![License](https://img.shields.io/badge/license-BSD-green.svg)
+
+# Title: README Generator
 
 > Deployed Application: https://speloqu24.github.io/README_Generator/
 
