@@ -12,7 +12,7 @@ function generateMarkdown(data) {
   * [Project Description](#description)
   * [Installation Details](#installation)
   * [Usage](#usage)
-  * [Contribution](#contributing)
+  * [Contribution](#contribution)
   * [License](#license)
   * [Questions](#questions)
   
@@ -46,7 +46,7 @@ function generateMarkdown(data) {
 >  [![Generic badge](https://img.shields.io/badge/Github-dodgerblue.svg)](https://github.com/${
     data.github
   })
-> [![Generic badge](https://img.shields.io/badge/Email-dodgerblue.svg)](mailto:${
+[![Generic badge](https://img.shields.io/badge/Email-dodgerblue.svg)](mailto:${
     data.email
   })
 
