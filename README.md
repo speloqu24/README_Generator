@@ -1,4 +1,5 @@
-(README EXAMPLE in IMAGES folder)
+(README Example screenshot in IMAGES folder. README below was generated with this REPO.)
+
 # ![License](https://img.shields.io/badge/license-GPL%203.0-green.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg) ![License](https://img.shields.io/badge/license-Apache2.0-green.svg) ![License](https://img.shields.io/badge/license-BSD-green.svg)
 
 # Title: README Generator
